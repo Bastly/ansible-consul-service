@@ -6,7 +6,7 @@
     "port": {{ port }},
     "checks": [
       {
-        "script": "/usr/local/bin/{{ check_name }}",
+        "script": "{{ script_check_path }}",
         "interval": "10s"
       }
     ]
