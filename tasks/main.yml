@@ -2,4 +2,4 @@
 # tasks file for consul-service
 
 - name: copy template
-  template: src=service.json.j2 dest=/etc/consul.d/{{ service }}.json backup=yes mode=0644
+  template: src=service.json.j2 dest=/etc/consul.d/{{ service_name }}.json backup=yes mode=0644
