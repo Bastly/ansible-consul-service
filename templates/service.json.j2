@@ -1,0 +1,14 @@
+{
+  "service": {
+    "name": "{{ name }}",
+    "tags": ["{{tag}}"],
+    "address": "{{ ip_address }}",
+    "port": {{ port }},
+    "checks": [
+      {
+        "script": "/usr/local/bin/{{ check_name }}",
+        "interval": "10s"
+      }
+    ]
+  }
+}
