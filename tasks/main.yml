@@ -3,3 +3,6 @@
 
 - name: copy template
   template: src=service.json.j2 dest=/etc/consul.d/{{ service_name }}.json backup=yes mode=0644
+
+- name: restarting consul 
+  service: name=consul state=restarted
